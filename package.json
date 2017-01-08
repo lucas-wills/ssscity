@@ -1,0 +1,27 @@
+{
+  "name": "ssscity",
+  "version": "1.0.0",
+  "description": "Snakes in hats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucas-wills/ssscity.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucas-wills/ssscity/issues"
+  },
+  "homepage": "https://github.com/lucas-wills/ssscity#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "knex": "^0.12.6",
+    "path": "^0.12.7",
+    "sqlite3": "^3.1.8"
+  }
+}

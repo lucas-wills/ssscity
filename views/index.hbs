@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>sssCity</title>
+  </head>
+  <h1>Welcome to the big sssCity</h1>
+  <body>
+      {{#each snakes}}
+        <div class="snake">
+          <img src={{this.img_url}} /><br/>
+          <a href="/index/{{this.id}}">{{this.snake_name}}</a><br/><br/>
+        </div>
+      {{/each}}
+  </body>
+</html>
