@@ -3,11 +3,22 @@ var knex = require('knex')(development)
 
 function getHome(req, res){
   knex('snakes')
-    .then(snakes => {
-      res.render('index', {snakes: snakes})
+    .then(snakeArray => {
+      res.json({snakes: snakeArray})
     })
+    .catch(err => console.error(err))
+}
+
+function getSnake(req, res){
+  knex('snakes')
+    .where('snakes.id', req.params.id)
+    .then(snake => {
+      res.render('snakeById', snake[0])
+    })
+    .catch(err => console.error(err))
 }
 
 module.exports = {
-  getHome: getHome
+  getHome: getHome,
+  getSnake: getSnake
 }
